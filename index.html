@@ -25,7 +25,7 @@
             </div>
             <div class="secondsection">
                 <div class="do">Let's do this!</div>
-                <div class="forminga">
+                <form><div class="forminga">
                     <div class="one">
                         <label>First Name</label>
                     </div>
@@ -35,10 +35,10 @@
                 </div>
                 <div class="boundaryone">
                     <div class="oneone">
-                        <input>
+                        <input type="name" name="firstname">
                     </div>
                     <div class="twotwo">
-                        <input>
+                        <input type="name" name="lastname">
                     </div>
                 </div>
                 
@@ -52,10 +52,10 @@
                 </div>
                 <div class="boundarytwo">
                     <div class="oneone">
-                        <input>
+                        <input type="email" name="email">
                     </div>
                     <div class="twotwo">
-                        <input>
+                        <input type="tel" name="tel" pattern="[0-9]{10}"  oninvalid="this.setCustomValidity('Phone number must be 10 digits.')">>
                     </div>
                 </div>
 
@@ -69,18 +69,19 @@
                 </div>
                 <div class="boundarythree">
                     <div class="oneone">
-                        <input>
+                        <input type="password" name="password" required>
                     </div>
                     <div class="twotwo">
-                        <input>
+                        <input type="password" name="passwordconfirm" required>
                     </div>
                 </div>
 
             </div>
             <div class="thirdsection">
-                <button type="submit" method="post">Create Account</button>
-                <div class="login">
-                    <p>Already have an account? <a href="">Log in</a></p>
+                <button type="submit">Create Account</button>
+            </form>
+            <div class="login">
+                    <p class="login">Already have an account? <a href="">Log in</a></p>
                 </div>
             </div>            
             
@@ -90,27 +91,3 @@
 
 </body>
 </html>
-
-
-<!-- <form>
-    <div class="one">
-        <label>First Name</label>
-        <input>
-        <label>Last Name</label>
-        <input>
-    </div>
-  
-    <div class="two">
-        <label>Email</label>
-        <input>
-        <label>Phone Number</label>
-        <input>
-    </div>
- 
-    <div class="three">
-        <label>Password</label>
-        <input>
-        <label>Confirm Password</label>
-        <input>
-    </div>
-</form> -->
